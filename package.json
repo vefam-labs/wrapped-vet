@@ -1,0 +1,35 @@
+{
+    "name": "wrapped-vet",
+    "description": "VeFam fork of VVET (W-ETH), renamed to WVET",
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vefam-labs/wrapped-vet"
+    },
+    "scripts": {
+        "clean": "npx rimraf ./build/",
+        "precompile": "npm run clean",
+        "compile": "waffle .waffle.json",
+        "pretest": "npm run compile"
+    },
+    "devDependencies": {
+        "ethereum-waffle": "^3.4.0",
+        "rimraf": "2.6.2",
+        "solc": "0.5.17"
+    },
+    "keywords": [
+        "vefam",
+        "dthor",
+        "wrapped-vet",
+        "wvet",
+        "vechain",
+        "weth",
+        "waffle",
+        "smart-contract"
+    ],
+    "license": "GPL-3.0",
+    "bugs": {
+        "url": "https://github.com/vefam-labs/wrapped-vet/issues"
+    },
+    "homepage": "https://github.com/vefam-labs/wrapped-vet#readme"
+}
